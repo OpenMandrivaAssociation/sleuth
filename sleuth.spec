@@ -1,7 +1,7 @@
 Summary:	Perl script for easy checking (DNS, common errors and etc.)
 Name:		sleuth
 Version:	1.4
-Release:	%mkrel 0.3
+Release:	%mkrel 0.4
 License:	GPL
 Group:		Networking/Other
 URL:		ftp://atrey.karlin.mff.cuni.cz/pub/local/mj/net/
