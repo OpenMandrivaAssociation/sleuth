@@ -1,11 +1,11 @@
 Summary:	Perl script for easy checking (DNS, common errors and etc.)
 Name:		sleuth
-Version:	1.4
-Release:	%mkrel 0.4
+Version:	1.4.3
+Release:	%mkrel 1
 License:	GPL
 Group:		Networking/Other
 URL:		ftp://atrey.karlin.mff.cuni.cz/pub/local/mj/net/
-Source0:	%{name}-%{version}-pre1.tar.bz2
+Source0:	%{name}-%{version}.tar.gz
 Patch0:		sleuth-1.3-relpath.patch
 #Requires:	perl-Net-DNS
 BuildRoot:	%{_tmppath}/%{name}-buildroot
@@ -23,7 +23,7 @@ how to fix it.
 
 %prep
 
-%setup -q -n %{name}
+%setup -q -n %{name}-%{version}
 %patch0 -p1
 
 %build
