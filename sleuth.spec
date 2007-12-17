@@ -8,7 +8,6 @@ URL:		ftp://atrey.karlin.mff.cuni.cz/pub/local/mj/net/
 Source0:	%{name}-%{version}.tar.gz
 Patch0:		sleuth-1.3-relpath.patch
 #Requires:	perl-Net-DNS
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildArch:	noarch
 
 %description
