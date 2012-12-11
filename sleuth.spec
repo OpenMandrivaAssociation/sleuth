@@ -50,3 +50,40 @@ install -m644 check.conf %{buildroot}/var/www/cgi-bin/
 %attr(0755,root,root) /var/www/cgi-bin/check.cgi
 %attr(0644,root,root) /var/www/cgi-bin/check.conf
 
+
+
+%changelog
+* Tue Sep 08 2009 Thierry Vignaud <tvignaud@mandriva.com> 1.4.3-5mdv2010.0
++ Revision: 433936
+- rebuild
+
+* Sat Aug 02 2008 Thierry Vignaud <tvignaud@mandriva.com> 1.4.3-4mdv2009.0
++ Revision: 260794
+- rebuild
+
+* Tue Jul 29 2008 Thierry Vignaud <tvignaud@mandriva.com> 1.4.3-3mdv2009.0
++ Revision: 252577
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Sun Dec 16 2007 Anne Nicolas <anne.nicolas@mandriva.com> 1.4.3-1mdv2008.1
++ Revision: 120650
+- New version
+
+* Wed Aug 15 2007 Anne Nicolas <anne.nicolas@mandriva.com> 1.4-0.4mdv2008.0
++ Revision: 63549
+- rebuild for 2008.0
+
+
+* Fri Jul 14 2006 Oden Eriksson <oeriksson@mandriva.com> 1.4-0.3mdv2007.0
+- rebuild
+
+* Fri Jun 03 2005 Oden Eriksson <oeriksson@mandriva.com> 1.4-0.2mdk
+- rebuild
+
+* Sun May 16 2004 Oden Eriksson <oeriksson@mandrakesoft.com> 1.4-0.1mdk
+- 1.4-pre1
+
