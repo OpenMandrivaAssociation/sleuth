@@ -1,14 +1,13 @@
 Summary:	Perl script for easy checking (DNS, common errors and etc.)
 Name:		sleuth
-Version:	1.4.3
-Release:	%mkrel 5
+Version:	1.4.4
+Release:	1
 License:	GPL
 Group:		Networking/Other
 URL:		ftp://atrey.karlin.mff.cuni.cz/pub/local/mj/net/
-Source0:	%{name}-%{version}.tar.gz
+Source0:	ftp://atrey.karlin.mff.cuni.cz:21/pub/local/mj/net/%{name}-%{version}.tar.gz
 Patch0:		sleuth-1.3-relpath.patch
 #Requires:	perl-Net-DNS
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildArch:	noarch
 
 %description
@@ -29,8 +28,6 @@ how to fix it.
 %build
 
 %install
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
-
 install -d %{buildroot}%{_sysconfdir}
 install -d %{buildroot}%{_bindir}
 install -d %{buildroot}/var/www/cgi-bin
@@ -38,9 +35,6 @@ install -m644 sleuth.conf %{buildroot}%{_sysconfdir}/
 install -m755 sleuth %{buildroot}%{_bindir}/
 install -m755 check.cgi %{buildroot}/var/www/cgi-bin/
 install -m644 check.conf %{buildroot}/var/www/cgi-bin/
-
-%clean
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
@@ -86,4 +80,5 @@ install -m644 check.conf %{buildroot}/var/www/cgi-bin/
 
 * Sun May 16 2004 Oden Eriksson <oeriksson@mandrakesoft.com> 1.4-0.1mdk
 - 1.4-pre1
+
 
